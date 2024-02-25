@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Calculadora Basal</title>
+</head>
+<body>
+	<div id="contenedor">
+		<div id="calculadora">
+			<div class="contenido">
+				<h1>Hidratación Basal</h1>
+				<p class="item">Completa todos los datos</p>
+				<form action="">
+                    <input class="item" id="peso" type="number" placeholder="Peso en kg" />
+                    <p class="item" id="error">* Debe completar todos los datos</p>
+                    <button class="item" id="calcular">Calcular</button>
+				</form>
+				<div id= "resultado1">
+					<p class="itemResultado" id="mantenimiento"></p>
+                	<p class="itemResultado" id="medioMantenimiento"></p>
+				</div>
+				<div id = "resultado2">
+					<p class="itemResultado" id="sc_1500"></p>
+					<p class="itemResultado" id="sc_2000"></p>
+				</div>
+					
+			</div>
+		</div>
+		
+		<div id="detalle">
+			<div class="contenido">
+				<h1>¿Cómo se Calcula?</h1>
+				<div class= "indicaciones">
+					<ul>
+						<li>De 0kg a 10kg, se calcula 100 cc por cada kilo</li>
+						<li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
+						<li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>

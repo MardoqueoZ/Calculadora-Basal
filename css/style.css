@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+
+body {
+	background: #f6f5f7;
+	font-family: "Monserrat", sans-serif; /*en caso que no funcione el monserrat al quedarme sin internet, usa la opcion despues de la coma*/
+	color: #3E363F;
+}
+
+#contenedor {
+	width: 900px; /*ancho*/
+	height: 500px; /*alto */
+	text-align: center;
+	/* para centrar vertical y horizontalmente */
+	position: absolute;
+	inset: 0; /* asigna el mismo valor a los 4 margenes */ 
+	margin: auto;
+	border-radius: 30px;
+	overflow: hidden;
+	box-shadow: 0px 14px 28px,
+	0 10px 10px rgba(0,0,0,0.22);
+}
+
+#calculadora {
+	background: white;
+	/* colocar divs lado a lado*/
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+#detalle {
+	background: #2271b3;
+	/* colocar divs lado a lado*/
+	width: 50%;
+	height: 100%;
+	float: right;
+	color: #f6f5f7;
+}
+
+.contenido {
+	/*centrar contenido verticalmente */
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	overflow: hidden;
+	padding: 40px;
+}
+
+.indicaciones {
+	text-align: left;
+}
+
+input {
+	width: 70%; /* 70% del div dentro del cual se encuentra*/
+	padding: 12px 15px; 
+	border: none;
+	background-color: #eee;
+	border-radius: 10px;
+}
+
+button {
+	font-size: 15px;
+	font-weight: bold;
+	padding: 12px 45px;
+	border-radius: 30px;
+	background-color: #2271b3;
+	border: 1px solid #2271b3;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: transform 20ms ease-in;
+	margin: 10px;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+#error {
+	color: red;
+	font-weight: bold;
+	display: none; /* none oculta el elemento al principio */
+}
+
+.itemResultado {
+	color: #03BB85;
+	font-weight: bold;
+	font-size: 25px;
+	margin-bottom: 5px;
+}
+

@@ -1,0 +1,35 @@
+Algoritmo calculadora_basal
+	Leer peso
+	hidratacion, mantenimiento, medio_mantenimiento, superficie_corporal, volumen_diario_1500, volumen_diario_2000
+
+	Si peso <= 30 entonces
+		Si peso <= 10 entonces
+			hidratacion = peso * 100
+			mantenimiento = hidratacion / 24
+			medio_mantenimiento = cc_por_hora * 1.5
+			
+			Mostrar(mantenimiento, medio_mantenimiento)
+		FinSi
+		Si peso > 10 y peso <= 20 entonces
+			hidratacion = ((peso - 10) * 50) + 1000
+			mantenimiento = hidratacion / 24
+			medio_mantenimiento = cc_por_hora * 1.5
+			
+			Mostrar(mantenimiento, medio_mantenimiento)
+		FinSi
+		Si peso > 20 entonces
+			hidratacion = ((peso -5) * 20) + 1300
+			mantenimiento = hidratacion / 24
+			medio_mantenimiento = cc_por_hora * 1.5
+			
+			Mostrar(mantenimiento, medio_mantenimiento)
+		FinSi
+	SiNo
+		superficie_corporal = ( (peso * 4) + 7) / (peso + 90)
+		volumen_diario_1500 = superficie_corporal * 1500
+		volumen_diario_2000 = superficie_corporal * 2000
+		
+		Mostrar(volumen_diario_1500, volumen_diario_2000)
+	FinSi	
+	
+fin algoritmo
